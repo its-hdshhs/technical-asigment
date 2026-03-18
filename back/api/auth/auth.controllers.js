@@ -50,7 +50,7 @@ const userModel = require("./auth.model")
 
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false, 
+      secure: true, 
     });
 
     res.json({ message: "Login successful" });
